@@ -3,709 +3,498 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Statement Estratégico · Bruno Cortez · LinkedIn</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Elo · Estratégia de Lançamento CONARH · Elofy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.34.0/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    /* paleta de azul — do mais claro ao mais escuro */
-    --blue-25:  #F4F8FD;
-    --blue-50:  #E6F1FB;
-    --blue-100: #CBE0F6;
-    --blue-200: #B5D4F4;
-    --blue-300: #7AB1E8;
-    --blue-400: #378ADD;
-    --blue-500: #2271C4;
-    --blue-600: #185FA5;
-    --blue-700: #114E89;
-    --blue-800: #0C447C;
-    --blue-900: #042C53;
-    --blue-950: #021A33;
+  :root{
+    --blue:#001BA6;
+    --blue-deep:#00135f;
+    --magenta:#E66CF7;
+    --yellow:#FFF98B;
+    --soft:#F1EDEC;
+    --ink:#0A0E26;
+    --line-d:#1E2A6B;
+    --line-l:#D8D3CC;
+    --txt-on-dark:#E9E7F2;
+    --txt-dim-d:#9AA2D4;
+    --txt-dim-l:#6A6456;
+    --maxw:1160px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',system-ui,sans-serif;background:var(--blue);color:var(--txt-on-dark);line-height:1.6;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,.lg{font-family:'League Gothic',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.94}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .elo-stroke{position:absolute;pointer-events:none;opacity:.9;z-index:0}
 
-    /* neutros */
-    --bg: #F7F9FC;
-    --surface: #FFFFFF;
-    --surface-2: #EFF3F8;
-    --border: rgba(12, 68, 124, 0.10);
-    --text: #0F1E33;
-    --text-2: #43556E;
-    --text-3: #7A8AA0;
+  .eyebrow{font-family:'JetBrains Mono';font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--magenta);display:inline-flex;align-items:center;gap:.7em}
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--magenta);animation:pulse 2.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(230,108,247,.55)}70%{box-shadow:0 0 0 10px rgba(230,108,247,0)}100%{box-shadow:0 0 0 0 rgba(230,108,247,0)}}
 
-    /* acentos discretos para sim/não — usados só nessas duas pílulas */
-    --pos: #0F6E56;
-    --pos-bg: #E1F5EE;
-    --neg: #993C1D;
-    --neg-bg: #FAECE7;
+  nav{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);background:rgba(0,27,166,.82);border-bottom:1px solid var(--line-d)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:'League Gothic';font-size:1.9rem;letter-spacing:.02em;color:#fff;text-transform:lowercase}
+  .brand .dot{color:var(--magenta)}
+  .brand small{font-family:'JetBrains Mono';font-size:.6rem;letter-spacing:.2em;color:var(--txt-dim-d);text-transform:uppercase;margin-left:.6em;vertical-align:middle}
+  .navlinks{display:flex;gap:24px}
+  .navlinks a{color:var(--txt-dim-d);text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.02em;transition:color .2s}
+  .navlinks a:hover{color:var(--yellow)}
+  @media(max-width:860px){.navlinks{display:none}}
 
-    --radius-md: 10px;
-    --radius-lg: 16px;
-    --radius-xl: 24px;
-  }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0; padding: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container {
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem 4rem;
-  }
-  h1, h2, h3, p { margin: 0; }
-  h1 { font-size: 44px; font-weight: 600; line-height: 1.1; letter-spacing: -0.025em; color: var(--blue-900); }
-  h2 { font-size: 28px; font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; color: var(--blue-900); }
-  section { margin-bottom: 3rem; }
-  .eyebrow {
-    font-size: 11px; font-weight: 600;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    margin-bottom: 12px;
-    display: inline-block;
-    padding: 5px 12px;
-    border-radius: 999px;
-    background: var(--blue-50);
-    color: var(--blue-700);
-  }
+  .hero{position:relative;padding:118px 0 92px;overflow:hidden}
+  .hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--line-d) 1px,transparent 1px),linear-gradient(90deg,var(--line-d) 1px,transparent 1px);background-size:60px 60px;opacity:.35;mask-image:radial-gradient(ellipse 75% 65% at 50% 25%,#000 25%,transparent 72%)}
+  .hero .elo-stroke{top:-60px;right:-160px;width:680px;height:510px;opacity:.5}
+  .hero .wrap{position:relative;z-index:2}
+  .hero h1{font-size:clamp(3.2rem,9vw,7rem);color:#fff;margin-top:24px;max-width:15ch}
+  .hero h1 .mag{color:var(--magenta)}
+  .hero h1 .yel{color:var(--yellow)}
+  .hero .lede{font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--txt-on-dark);max-width:60ch;margin-top:26px;font-weight:300}
+  .hero .lede b{font-weight:600;color:#fff}
+  .hero-meta{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px 34px;font-family:'JetBrains Mono';font-size:.74rem;color:var(--txt-dim-d)}
+  .hero-meta b{color:var(--yellow);font-weight:500}
+  .doc-tag{position:absolute;top:120px;right:28px;z-index:2;font-family:'JetBrains Mono';font-size:.66rem;color:var(--txt-dim-d);text-align:right;line-height:1.8}
+  @media(max-width:860px){.doc-tag{display:none}}
 
-  /* HERO */
-  .hero {
-    padding: 3rem 2.25rem;
-    background: linear-gradient(135deg, var(--blue-800) 0%, var(--blue-600) 55%, var(--blue-500) 100%);
-    border-radius: var(--radius-xl);
-    margin-bottom: 3rem;
-    color: white;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: -40%; right: -10%;
-    width: 60%; height: 180%;
-    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .hero::after {
-    content: "";
-    position: absolute;
-    bottom: -50%; left: -20%;
-    width: 70%; height: 180%;
-    background: radial-gradient(circle, rgba(122, 177, 232, 0.18) 0%, transparent 55%);
-    pointer-events: none;
-  }
-  .hero > * { position: relative; z-index: 1; }
-  .hero-badge {
-    display: inline-block;
-    font-size: 12px; font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: rgba(255,255,255,0.15);
-    color: rgba(255,255,255,0.95);
-    border: 1px solid rgba(255,255,255,0.2);
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.04em;
-  }
-  .hero h1 { color: white; }
-  .hero-subtitle {
-    font-size: 18px;
-    color: rgba(255,255,255,0.85);
-    margin: 10px 0 1.5rem;
-    font-weight: 500;
-  }
-  .hero-body {
-    font-size: 16px;
-    max-width: 620px;
-    color: rgba(255,255,255,0.92);
-    line-height: 1.65;
-  }
-  .pill-row {
-    display: flex; gap: 8px;
-    margin-top: 1.75rem;
-    flex-wrap: wrap;
-  }
-  .pill {
-    font-size: 12px; font-weight: 500;
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.95);
-  }
+  section{padding:88px 0;position:relative;overflow:hidden}
+  .band-soft{background:var(--soft);color:var(--ink)}
+  .band-soft .eyebrow{color:var(--blue)}
+  .band-soft .eyebrow::before{background:var(--blue);animation:pulseb 2.6s infinite}
+  @keyframes pulseb{0%{box-shadow:0 0 0 0 rgba(0,27,166,.4)}70%{box-shadow:0 0 0 10px rgba(0,27,166,0)}100%{box-shadow:0 0 0 0 rgba(0,27,166,0)}}
+  .band-white{background:#fff;color:var(--ink)}
+  .band-white .eyebrow{color:var(--blue)}
+  .band-white .eyebrow::before{background:var(--blue)}
 
-  /* STATS — diagnóstico */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 12px;
-    margin-top: 1.25rem;
-  }
-  .stat {
-    background: var(--surface);
-    border: 1px solid var(--blue-100);
-    border-radius: var(--radius-md);
-    padding: 1.1rem 1.25rem;
-    border-top: 3px solid var(--blue-400);
-  }
-  .stat-label { font-size: 13px; color: var(--blue-700); font-weight: 500; }
-  .stat-value { font-size: 30px; font-weight: 600; margin-top: 4px; color: var(--blue-900); }
+  .sec-head{max-width:64ch;margin-bottom:46px;position:relative;z-index:2}
+  .kicker{font-family:'JetBrains Mono';font-size:.74rem;letter-spacing:.14em;color:var(--magenta)}
+  .sec-head h2{font-size:clamp(2.4rem,5vw,3.8rem);margin:12px 0 16px;color:#fff}
+  .band-soft .sec-head h2,.band-white .sec-head h2{color:var(--blue)}
+  .sec-head p{font-size:1.04rem;color:var(--txt-on-dark);font-weight:300}
+  .band-soft .sec-head p,.band-white .sec-head p{color:var(--txt-dim-l)}
+  .sec-head p b{font-weight:600}
 
-  /* OBJETIVOS */
-  .obj-stack > * + * { margin-top: 12px; }
-  .obj-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    padding: 1.25rem 1.5rem;
-    border-left: 3px solid var(--blue-300);
-  }
-  .obj-card.highlight {
-    background: linear-gradient(135deg, var(--blue-25) 0%, var(--blue-50) 100%);
-    border: 1px solid var(--blue-200);
-    border-left: 4px solid var(--blue-600);
-  }
-  .icon-circle {
-    width: 40px; height: 40px;
-    border-radius: 10px;
-    display: inline-flex;
-    align-items: center; justify-content: center;
-    font-size: 20px;
-    flex-shrink: 0;
-    background: var(--blue-50);
-    color: var(--blue-700);
-  }
-  .obj-card.highlight .icon-circle {
-    background: var(--blue-600);
-    color: white;
-  }
-  .card-head {
-    display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
-  }
-  .card-title { font-size: 16px; font-weight: 600; color: var(--blue-900); }
-  .card-text { font-size: 14.5px; line-height: 1.6; color: var(--text-2); }
-  .priority-tag {
-    font-size: 11px; font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: var(--blue-700);
-    color: white;
-    margin-left: auto;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
+  .thesis{display:grid;grid-template-columns:1.05fr 1fr;gap:52px;align-items:start;position:relative;z-index:2}
+  @media(max-width:860px){.thesis{grid-template-columns:1fr;gap:32px}}
+  .thesis .big{font-family:'Poppins';font-weight:600;font-size:clamp(1.5rem,2.7vw,2.15rem);line-height:1.26;color:var(--blue)}
+  .thesis .big .mag{color:var(--magenta)}
+  .tp{border-left:3px solid var(--magenta);padding:2px 0 2px 18px;margin-bottom:20px}
+  .tp h4{font-family:'Poppins';font-weight:600;font-size:1.04rem;color:var(--blue);margin-bottom:4px}
+  .tp p{font-size:.94rem;color:var(--txt-dim-l)}
+  .band-soft .elo-stroke{bottom:-120px;left:-120px;width:420px;opacity:.16}
 
-  /* MENSAGEM CENTRAL */
-  .quote {
-    background: linear-gradient(135deg, var(--blue-25) 0%, var(--blue-50) 100%);
-    border-radius: var(--radius-lg);
-    padding: 2rem 2.25rem;
-    margin: 1.25rem 0;
-    position: relative;
-    border-left: 4px solid var(--blue-400);
-  }
-  .quote::before {
-    content: "\201C";
-    font-family: "Source Serif 4", Georgia, serif;
-    font-size: 80px;
-    color: var(--blue-200);
-    position: absolute;
-    top: -10px; left: 18px;
-    line-height: 1;
-  }
-  .quote p {
-    font-family: "Source Serif 4", Georgia, serif;
-    font-style: italic;
-    font-size: 21px;
-    line-height: 1.55;
-    color: var(--blue-900);
-    padding-left: 36px;
-  }
+  .agent-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;position:relative;z-index:2}
+  @media(max-width:860px){.agent-grid{grid-template-columns:1fr}}
+  .agent{background:linear-gradient(180deg,#0a1352,#00135f);border:1px solid var(--line-d);border-radius:16px;padding:26px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+  .agent:hover{transform:translateY(-5px);border-color:var(--accent)}
+  .agent::after{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--accent)}
+  .agent .badge{display:inline-flex;align-items:center;gap:.5em;font-family:'JetBrains Mono';font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:30px;padding:4px 12px}
+  .agent .badge .d{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2.6s infinite}
+  .agent h3{font-size:2.1rem;color:#fff;margin:16px 0 0}
+  .agent .role{font-family:'JetBrains Mono';font-size:.74rem;color:var(--txt-dim-d);margin:2px 0 14px}
+  .agent .persona{font-size:.95rem;color:var(--txt-on-dark);margin-bottom:14px;font-weight:300}
+  .agent .says{font-weight:300;font-style:italic;color:#fff;font-size:1.02rem;border-left:2px solid var(--accent);padding-left:14px;margin-bottom:16px}
+  .agent .feat{font-family:'JetBrains Mono';font-size:.72rem;color:var(--txt-dim-d)}
+  .agent .feat b{color:var(--yellow);font-weight:500}
+  .agent-ret{--accent:var(--magenta)}
+  .agent-ava{--accent:var(--yellow)}
+  .agent-um{--accent:#7E8DFF}
+  .agent-cli{--accent:var(--magenta)}
 
-  /* LINHAS EDITORIAIS */
-  .lines-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 14px;
-    margin-top: 1.5rem;
-  }
-  .line-card {
-    border-radius: var(--radius-lg);
-    padding: 1.5rem 1.5rem 1.25rem;
-    color: #FFFFFF;
-    position: relative;
-    overflow: hidden;
-    min-height: 220px;
-    display: flex;
-    flex-direction: column;
-  }
-  /* quatro intensidades de azul — todas escuras o suficiente para garantir contraste com texto branco */
-  .line-card.t1 { background: linear-gradient(160deg, var(--blue-800) 0%, var(--blue-950) 100%); }
-  .line-card.t2 { background: linear-gradient(160deg, var(--blue-700) 0%, var(--blue-900) 100%); }
-  .line-card.t3 { background: linear-gradient(160deg, var(--blue-600) 0%, var(--blue-800) 100%); }
-  .line-card.t4 { background: linear-gradient(160deg, var(--blue-500) 0%, var(--blue-700) 100%); }
-  .line-header {
-    display: flex; align-items: center; gap: 10px;
-    margin-bottom: 1rem;
-    color: #FFFFFF;
-  }
-  .line-header .ti { font-size: 22px; color: #FFFFFF; }
-  .line-num {
-    font-size: 11px; font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-  .line-title {
-    font-size: 19px; font-weight: 600;
-    margin-bottom: 8px;
-    letter-spacing: -0.01em;
-    color: #FFFFFF;
-  }
-  .line-desc {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: #FFFFFF;
-    flex-grow: 1;
-  }
-  .line-volume {
-    margin-top: 14px;
-    padding-top: 12px;
-    border-top: 1px solid rgba(255,255,255,0.25);
-    display: flex; justify-content: space-between;
-    font-size: 12px;
-    color: #FFFFFF;
-  }
-  .line-volume .strong { font-weight: 600; }
+  .hq{margin-top:18px;position:relative;z-index:2;background:linear-gradient(120deg,#00135f,#0a1352);border:1px solid var(--line-d);border-radius:16px;padding:30px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center}
+  @media(max-width:680px){.hq{grid-template-columns:1fr}}
+  .hq-glyph{width:96px;height:96px;border-radius:18px;background:var(--blue);border:1px solid var(--magenta);display:flex;align-items:center;justify-content:center;text-align:center;font-family:'League Gothic';font-size:1.05rem;color:var(--yellow);line-height:.95;padding:8px}
+  .hq h3{font-size:1.8rem;color:#fff;margin-bottom:6px}
+  .hq p{font-size:.98rem;color:var(--txt-on-dark);font-weight:300;max-width:62ch}
+  .hq p b{color:var(--yellow);font-weight:500}
 
-  /* TOM DE VOZ */
-  .tone-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 10px;
-    margin-top: 1.25rem;
-  }
-  .tone-card {
-    padding: 16px 18px;
-    border-radius: var(--radius-md);
-    background: var(--surface);
-    border: 1px solid var(--blue-100);
-    border-top: 2px solid var(--blue-400);
-  }
-  .tone-title { font-size: 15px; font-weight: 600; color: var(--blue-900); }
-  .tone-desc { font-size: 13px; margin-top: 4px; line-height: 1.5; color: var(--text-2); }
-  .yesno {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 1.25rem;
-  }
-  .yes, .no { border-radius: var(--radius-md); padding: 16px 18px; }
-  .yes { background: var(--pos-bg); color: var(--pos); }
-  .no  { background: var(--neg-bg); color: var(--neg); }
-  .yesno p { font-size: 13.5px; line-height: 1.55; }
-  .yesno .label { font-size: 12px; font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
+  .tablewrap{overflow-x:auto;border:1px solid var(--line-l);border-radius:14px;position:relative;z-index:2}
+  table{border-collapse:collapse;width:100%;min-width:820px;background:#fff;font-size:.9rem}
+  thead th{background:var(--blue);color:#fff;font-family:'JetBrains Mono';font-weight:500;font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;text-align:left;padding:15px 16px}
+  td{padding:15px 16px;border-bottom:1px solid var(--line-l);vertical-align:top;font-weight:300;color:#2b2b2b}
+  tbody tr:last-child td{border-bottom:none}
+  .who{font-family:'League Gothic';font-size:1.35rem;color:var(--blue);letter-spacing:.02em}
+  .gap{color:var(--blue);font-weight:600}
+  td small{color:var(--txt-dim-l);display:block;margin-top:3px}
 
-  /* CALENDÁRIO */
-  .legend {
-    display: flex; gap: 18px; flex-wrap: wrap;
-    margin: 1rem 0 1.5rem;
-    font-size: 12px;
-    color: var(--text-2);
-    font-weight: 500;
-  }
-  .legend-dot {
-    width: 12px; height: 12px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-right: 7px;
-    vertical-align: -1px;
-  }
-  .post {
-    background: var(--surface);
-    border-radius: var(--radius-md);
-    padding: 14px 18px;
-    display: grid;
-    grid-template-columns: 84px 1fr auto;
-    gap: 16px;
-    align-items: center;
-    border: 1px solid var(--blue-50);
-    border-left: 5px solid var(--blue-300);
-    transition: transform 0.15s ease, border-color 0.15s ease;
-  }
-  .post:hover { transform: translateX(2px); }
-  .post.t1 { border-left-color: var(--blue-800); }
-  .post.t2 { border-left-color: var(--blue-600); }
-  .post.t3 { border-left-color: var(--blue-400); }
-  .post.t4 { border-left-color: var(--blue-300); }
-  .post-day { font-size: 11px; font-weight: 600; color: var(--text-3); letter-spacing: 0.06em; }
-  .post-num { font-size: 18px; font-weight: 600; margin-top: 2px; color: var(--blue-900); }
-  .post-tag {
-    font-size: 11px; font-weight: 600;
-    padding: 3px 10px; border-radius: 999px;
-    display: inline-block; margin-bottom: 5px;
-    letter-spacing: 0.03em;
-  }
-  .post-tag.t1 { background: var(--blue-800); color: white; }
-  .post-tag.t2 { background: var(--blue-600); color: white; }
-  .post-tag.t3 { background: var(--blue-100); color: var(--blue-800); }
-  .post-tag.t4 { background: var(--blue-50);  color: var(--blue-700); }
-  .post-text { font-size: 14px; line-height: 1.55; color: var(--text); }
-  .post-format { font-size: 11px; color: var(--text-3); font-weight: 500; white-space: nowrap; }
-  .month-label {
-    font-size: 12px; font-weight: 600; color: var(--blue-700);
-    margin: 1.75rem 0 12px; letter-spacing: 0.1em;
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: var(--blue-50);
-    display: inline-block;
-  }
-  .stack > * + * { margin-top: 10px; }
+  .bcards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px;position:relative;z-index:2}
+  @media(max-width:860px){.bcards{grid-template-columns:1fr}}
+  .bcard{border:1px solid var(--line-l);border-radius:14px;background:#fff;overflow:hidden}
+  .bcard .top{padding:20px 22px 16px;border-bottom:1px solid var(--line-l)}
+  .bcard h4{font-family:'League Gothic';font-size:1.7rem;color:var(--blue);letter-spacing:.02em}
+  .bcard .tag{font-family:'JetBrains Mono';font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--magenta);margin-top:2px}
+  .bcard .row{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:12px 22px;font-size:.88rem}
+  .bcard .row + .row{border-top:1px solid var(--soft)}
+  .bcard .rk{font-family:'JetBrains Mono';font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:var(--txt-dim-l);padding-top:3px}
+  .bcard .rv{color:#2b2b2b;font-weight:300}
+  .bcard .move{background:var(--blue);color:#fff}
+  .bcard .move .rk{color:var(--yellow)}
+  .bcard .move .rv{color:#fff;font-weight:400}
 
-  /* MÉTRICAS */
-  .metric-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-    margin-top: 1.25rem;
-  }
-  .metric {
-    border-radius: var(--radius-md);
-    padding: 18px 20px;
-    background: var(--surface);
-    border: 1px solid var(--blue-100);
-    border-top: 3px solid var(--blue-500);
-  }
-  .metric-label {
-    font-size: 11px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.08em;
-    margin-bottom: 8px;
-    display: flex; align-items: center; gap: 8px;
-    color: var(--blue-700);
-  }
-  .metric-desc { font-size: 13.5px; line-height: 1.55; color: var(--text-2); }
+  .pos .elo-stroke{top:30px;right:-180px;width:520px;height:390px;opacity:.4}
+  .pos-statement{position:relative;z-index:2;font-family:'Poppins';font-weight:300;font-size:clamp(1.7rem,3.6vw,2.8rem);line-height:1.3;max-width:22ch;color:#fff}
+  .pos-statement .b{font-weight:600}
+  .pos-statement .mag{color:var(--magenta);font-weight:600}
+  .diff-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:46px;position:relative;z-index:2}
+  @media(max-width:860px){.diff-row{grid-template-columns:1fr}}
+  .diff{border:1px solid var(--line-d);border-radius:14px;padding:24px;background:rgba(255,255,255,.03)}
+  .diff .n{font-family:'JetBrains Mono';font-size:.74rem;color:var(--magenta)}
+  .diff h4{font-family:'League Gothic';font-size:1.55rem;color:#fff;margin:10px 0 8px;letter-spacing:.02em}
+  .diff p{font-size:.92rem;color:var(--txt-dim-d);font-weight:300}
 
-  footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-    font-size: 12px;
-    color: var(--text-3);
-    text-align: center;
-    letter-spacing: 0.04em;
-  }
-  .ti { line-height: 1; }
-  section p { margin-top: 1rem; color: var(--text); line-height: 1.7; font-size: 15.5px; }
+  .wave{border-left:3px solid var(--magenta);padding-left:26px;margin-bottom:18px;position:relative;z-index:2}
+  .wave::before{content:"";position:absolute;left:-8px;top:4px;width:13px;height:13px;border-radius:50%;background:var(--magenta);border:3px solid var(--soft)}
+  .wave .wl{font-family:'JetBrains Mono';font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta)}
+  .wave h3{font-size:1.9rem;color:var(--blue);margin:6px 0 2px}
+  .wave .wd{font-family:'JetBrains Mono';font-size:.78rem;color:var(--txt-dim-l);margin-bottom:16px}
+  .chan{display:grid;grid-template-columns:158px 1fr;gap:14px;padding:13px 0;border-top:1px solid var(--line-l)}
+  @media(max-width:680px){.chan{grid-template-columns:1fr;gap:3px}}
+  .chan .cn{font-family:'Poppins';font-weight:600;color:var(--blue);font-size:.9rem}
+  .chan .cb{font-size:.92rem;color:#2b2b2b;font-weight:300}
+  .chan .cb b{font-weight:600;color:var(--blue)}
+  .tagpaid{display:inline-block;background:var(--yellow);color:var(--blue);font-family:'JetBrains Mono';font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:20px;font-weight:500;vertical-align:middle}
 
-  @media print {
-    body { background: white; }
-    .container { padding: 1.5rem; }
-    section { break-inside: avoid; page-break-inside: avoid; }
-    .post, .obj-card, .line-card { break-inside: avoid; page-break-inside: avoid; }
-  }
-  @media (max-width: 540px) {
-    .container { padding: 1.75rem 1rem; }
-    h1 { font-size: 34px; }
-    h2 { font-size: 22px; }
-    .hero { padding: 2rem 1.5rem; }
-    .quote { padding: 1.5rem 1.5rem 1.5rem 1.25rem; }
-    .quote p { font-size: 18px; padding-left: 24px; }
-    .post { grid-template-columns: 64px 1fr; }
-    .post-format { display: none; }
-    .yesno { grid-template-columns: 1fr; }
-  }
+  .conarh{margin-top:6px;position:relative;z-index:2;background:linear-gradient(135deg,#00135f,#0a1352);border:1px solid var(--line-d);border-radius:18px;padding:36px;overflow:hidden}
+  .conarh .elo-stroke{bottom:-90px;right:-90px;width:360px;height:270px;opacity:.2}
+  .conarh h3{font-size:2rem;color:#fff;margin-bottom:10px;position:relative;z-index:2}
+  .conarh > p{color:var(--txt-on-dark);font-weight:300;max-width:64ch;margin-bottom:22px;position:relative;z-index:2}
+  .conarh > p b{color:var(--yellow);font-weight:500}
+  .cx-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;position:relative;z-index:2}
+  @media(max-width:680px){.cx-grid{grid-template-columns:1fr}}
+  .cx{border:1px solid var(--line-d);border-radius:12px;padding:18px;background:rgba(255,255,255,.03)}
+  .cx h4{font-family:'Poppins';font-weight:600;font-size:.98rem;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:.6em}
+  .cx h4 span{font-family:'JetBrains Mono';font-size:.58rem;color:var(--blue);background:var(--yellow);border-radius:20px;padding:2px 8px;font-weight:500;text-transform:uppercase}
+  .cx p{font-size:.86rem;color:var(--txt-dim-d);font-weight:300;margin:0}
+
+  .talk{position:relative;z-index:2;background:#fff;border:1px solid var(--line-l);border-radius:16px;padding:30px}
+  .talk h3{font-size:1.7rem;color:var(--blue);margin-bottom:4px}
+  .talk .tt{font-family:'JetBrains Mono';font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;color:var(--magenta);margin-bottom:18px}
+  .arc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+  @media(max-width:680px){.arc-grid{grid-template-columns:1fr}}
+  .arc{background:var(--soft);border-radius:12px;padding:18px}
+  .arc .step{font-family:'JetBrains Mono';font-size:.7rem;color:var(--magenta);text-transform:uppercase;letter-spacing:.06em}
+  .arc h5{font-family:'League Gothic';font-size:1.35rem;color:var(--blue);margin:8px 0 8px;letter-spacing:.02em}
+  .arc p{font-size:.86rem;color:#2b2b2b;font-weight:300}
+  .guard{margin-top:18px;background:var(--blue);color:var(--txt-on-dark);border-radius:12px;padding:18px 20px;font-size:.94rem;font-weight:300;border-left:4px solid var(--yellow)}
+  .guard b{color:var(--yellow);font-weight:600}
+
+  footer{padding:64px 0 70px;background:var(--blue);border-top:1px solid var(--line-d);position:relative;overflow:hidden}
+  footer .elo-stroke{bottom:-150px;left:50%;transform:translateX(-50%);width:760px;height:570px;opacity:.12}
+  footer .wrap{position:relative;z-index:2;display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;align-items:flex-start}
+  footer .brand{font-size:2.4rem}
+  footer p{color:var(--txt-dim-d);font-size:.84rem;font-weight:300;margin-top:8px}
+  .disc{font-family:'JetBrains Mono';font-size:.68rem;color:#5663ad;max-width:62ch;line-height:1.8;margin-top:12px}
+  .pill{display:inline-block;font-family:'JetBrains Mono';font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:30px;border:1px solid var(--line-d);color:var(--txt-dim-d)}
+
+  ::selection{background:var(--magenta);color:#fff}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<div class="container">
 
-  <section class="hero">
-    <div class="hero-badge">Statement estratégico · LinkedIn</div>
-    <h1>Bruno Cortez</h1>
-    <p class="hero-subtitle">CEO da Elofy · Vertical HRTech do Grupo Zucchetti no Brasil</p>
-    <p class="hero-body">Reposicionamento do perfil para refletir voz de CEO: autoridade pessoal construída no LinkedIn, transferida para Elofy e Zucchetti. Foco em imprensa, palco e posicionamento — não em geração de leads.</p>
-    <div class="pill-row">
-      <span class="pill">Maio e Junho de 2026</span>
-      <span class="pill">2 posts por semana</span>
-      <span class="pill">4 linhas editoriais</span>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="elo" viewBox="0 0 400 300"><path d="M40,210 C40,120 140,90 190,150 C230,198 150,250 120,210 C90,170 180,80 280,120 C360,152 340,250 280,250" fill="none" stroke="#E66CF7" stroke-width="26" stroke-linecap="round"/></symbol></defs></svg>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">elofy<span class="dot">.</span><small>estratégia</small></div>
+    <div class="navlinks">
+      <a href="#tese">A tese</a>
+      <a href="#elo">Time Elo</a>
+      <a href="#bench">Concorrência</a>
+      <a href="#pos">Diferencial</a>
+      <a href="#gtm">GTM</a>
+      <a href="#bruno">Palestra</a>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <section>
-    <span class="eyebrow">01 · Diagnóstico</span>
-    <h2>O perfil precisava de voz de CEO</h2>
-    <p>As comunicações vinham soando operacionais. Este Statement recoloca Bruno no patamar correto: líder de uma HRTech do Grupo Zucchetti, com perspectiva crítica sobre dois movimentos centrais nas empresas hoje — a redefinição do trabalho pela IA e a consolidação da cultura como ativo de performance.</p>
-    <div class="stats">
-      <div class="stat"><div class="stat-label">Usuários ativos</div><div class="stat-value">300 mil+</div></div>
-      <div class="stat"><div class="stat-label">Avaliações registradas</div><div class="stat-value">1 milhão+</div></div>
-      <div class="stat"><div class="stat-label">Anos em transformação</div><div class="stat-value">20+</div></div>
+<header class="hero">
+  <div class="hero-grid"></div>
+  <svg class="elo-stroke"><use href="#elo"/></svg>
+  <div class="doc-tag">DOC. INTERNO · CONFIDENCIAL<br>PRODUCT MARKETING<br>LANÇAMENTO CONARH 2026</div>
+  <div class="wrap">
+    <span class="eyebrow">Plano de lançamento · conceito Elo</span>
+    <h1>Seu time de gestão ganhou <span class="mag">reforços</span> de <span class="yel">IA</span>.</h1>
+    <p class="lede">Quatro agentes que trabalham junto com gestores e RH. Eles avaliam, escutam, antecipam saídas e transformam conversa em ação, e reportam tudo no Painel, o QG do time. Juntos formam o <b>Elo</b>. Este documento defende a estratégia, mapeia a concorrência e detalha o go to market que estreia no CONARH.</p>
+    <div class="hero-meta">
+      <span>EVENTO ÂNCORA · <b>CONARH</b></span>
+      <span>CONCEITO · <b>time de agentes</b></span>
+      <span>AGENTES · <b>4 + QG</b></span>
+      <span>REFERÊNCIA GTM · <b>Bitrix24 Vibe</b></span>
     </div>
-  </section>
+  </div>
+</header>
 
-  <section>
-    <span class="eyebrow">02 · Objetivos</span>
-    <h2>O que este perfil deve construir</h2>
-    <div class="obj-stack" style="margin-top: 1.25rem;">
-      <div class="obj-card">
-        <div class="card-head">
-          <div class="icon-circle"><i class="ti ti-trophy"></i></div>
-          <div class="card-title">Consolidar Bruno como voz de referência</div>
-        </div>
-        <p class="card-text">Referência no Brasil sobre futuro da gestão de pessoas, na intersecção entre cultura, performance e tecnologia.</p>
-      </div>
-      <div class="obj-card">
-        <div class="card-head">
-          <div class="icon-circle"><i class="ti ti-users"></i></div>
-          <div class="card-title">Posicionar como interlocutor estratégico</div>
-        </div>
-        <p class="card-text">Para CEOs, CHROs e diretores de RH em decisões sobre desempenho, OKRs, cultura e adoção de IA no RH.</p>
-      </div>
-      <div class="obj-card highlight">
-        <div class="card-head">
-          <div class="icon-circle"><i class="ti ti-microphone"></i></div>
-          <div class="card-title">Desenvolver fonte de imprensa e palestrante</div>
-          <span class="priority-tag">Prioridade</span>
-        </div>
-        <p class="card-text">Bruno responde por toda a vertical HRTech da Zucchetti no Brasil. Sua presença pública precisa estar à altura. O LinkedIn é o ativo central: onde jornalistas pesquisam fontes e curadores avaliam palestrantes.</p>
-      </div>
-      <div class="obj-card">
-        <div class="card-head">
-          <div class="icon-circle"><i class="ti ti-arrow-right"></i></div>
-          <div class="card-title">Autoridade pessoal transferida para a marca</div>
-        </div>
-        <p class="card-text">Este perfil não tem como objetivo gerar leads. O retorno comercial é indireto: vem do reconhecimento, da entrada em pautas e dos convites para palco. Vender é função do time comercial.</p>
+<section id="tese" class="band-soft">
+  <svg class="elo-stroke"><use href="#elo"/></svg>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">01 — POR QUÊ</span>
+      <span class="eyebrow" style="margin-left:14px">A tese</span>
+      <h2>O mercado já tem IA que lê relatório. Falta IA que faz junto com quem decide.</h2>
+      <p>Cada concorrente lançou uma IA que interpreta ou que prevê. Pouquíssimos colocaram a IA dentro do dia a dia de quem sustenta a cultura: o gestor e o RH. É aí que o Elo entra como reforço.</p>
+    </div>
+    <div class="thesis">
+      <p class="big">Gestores e RH são quem sustenta a cultura, e também quem mais carrega trabalho invisível. O Elo não substitui esse trabalho. <span class="mag">Ele soma</span>, devolvendo tempo para o que só gente faz.</p>
+      <div>
+        <div class="tp"><h4>Dado espalhado vira decisão</h4><p>Clima, desempenho e conversas 1 a 1 vivem em sistemas que não conversam. O Elo cruza tudo e entrega o que importa, pronto para agir.</p></div>
+        <div class="tp"><h4>Previsão que vira ação, não relatório</h4><p>Não basta prever risco de saída. O Elo gera a lista priorizada e a encaminha para a pessoa responsável.</p></div>
+        <div class="tp"><h4>O gestor no centro</h4><p>Três dos quatro agentes somam diretamente ao gestor de linha, um espaço que a concorrência ainda toca de leve.</p></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <span class="eyebrow">03 · Mensagem central</span>
-    <div class="quote">
-      <p>Cultura organizacional e gestão de performance pararam de ser temas de RH. Viraram temas de board. Minha missão é ajudar líderes a tomar decisões sobre pessoas com a mesma clareza, dados e disciplina com que tomam decisões financeiras.</p>
-    </div>
-    <p>Bruno traz para o debate de RH uma perspectiva pouco comum: a de um executivo de tecnologia que entende que o gargalo das organizações raramente é o sistema. É a cultura, a clareza de metas e a qualidade da conversa entre líderes e times.</p>
-  </section>
-
-  <section>
-    <span class="eyebrow">04 · Linhas editoriais</span>
-    <h2>Quatro frentes de conteúdo</h2>
-    <div class="lines-grid">
-      <div class="line-card t1">
-        <div class="line-header">
-          <i class="ti ti-trending-up"></i>
-          <span class="line-num">Linha 1</span>
-        </div>
-        <div class="line-title">Tendências e Futuro do Trabalho</div>
-        <p class="line-desc">IA na gestão, RH como tema de board, liderança em times híbridos. Bruno toma posição, não descreve.</p>
-        <div class="line-volume"><span>Volume</span><span class="strong">1 post/semana</span></div>
-      </div>
-      <div class="line-card t2">
-        <div class="line-header">
-          <i class="ti ti-chart-bar"></i>
-          <span class="line-num">Linha 2</span>
-        </div>
-        <div class="line-title">Cultura, Performance e Dados</div>
-        <p class="line-desc">OKRs, ciclos de desempenho, calibração, 9-Box, people analytics. Domínio técnico ancorado em dados da Elofy.</p>
-        <div class="line-volume"><span>Volume</span><span class="strong">1 post/semana</span></div>
-      </div>
-      <div class="line-card t3">
-        <div class="line-header">
-          <i class="ti ti-user"></i>
-          <span class="line-num">Linha 3</span>
-        </div>
-        <div class="line-title">Bastidores de CEO e Liderança</div>
-        <p class="line-desc">Primeira pessoa. Decisões difíceis, aprendizados da transição, como Bruno estrutura agenda e conduz 1:1.</p>
-        <div class="line-volume"><span>Volume</span><span class="strong">1 post a cada 15 dias</span></div>
-      </div>
-      <div class="line-card t4">
-        <div class="line-header">
-          <i class="ti ti-calendar-event"></i>
-          <span class="line-num">Linha 4</span>
-        </div>
-        <div class="line-title">Agenda, Eventos e Mídia</div>
-        <p class="line-desc">Amcham, HR Executive Talks, entrevistas, marcos. Anúncio antes, desdobramento depois — em três tempos.</p>
-        <div class="line-volume"><span>Volume</span><span class="strong">1 a 2 posts/mês</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <span class="eyebrow">05 · Tom de voz</span>
-    <h2>Como Bruno deve soar</h2>
-    <div class="tone-grid">
-      <div class="tone-card"><div class="tone-title">Confiante</div><div class="tone-desc">Toma posição. Não explica o básico.</div></div>
-      <div class="tone-card"><div class="tone-title">Estratégico</div><div class="tone-desc">Conecta sinais. Apoia em dados.</div></div>
-      <div class="tone-card"><div class="tone-title">Pessoal</div><div class="tone-desc">Primeira pessoa. Sem floreio corporativo.</div></div>
-      <div class="tone-card"><div class="tone-title">Analítico</div><div class="tone-desc">Tese clara antes de cada post.</div></div>
-    </div>
-    <div class="yesno">
-      <div class="yes">
-        <div class="label"><i class="ti ti-check"></i>Sim</div>
-        <p>"A maioria das empresas vai errar a adoção de IA em RH. Aqui está o que diferencia as que não vão."</p>
-      </div>
-      <div class="no">
-        <div class="label"><i class="ti ti-x"></i>Não</div>
-        <p>"5 dicas para usar IA no RH da sua empresa! Você sabia que..."</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <span class="eyebrow">06 · Calendário</span>
-    <h2>Maio e Junho de 2026</h2>
-    <p>Dois posts por semana. Início com o anúncio da Amcham na segunda, 18 de maio.</p>
-
-    <div class="legend">
-      <span><span class="legend-dot" style="background:var(--blue-800);"></span>Tendências</span>
-      <span><span class="legend-dot" style="background:var(--blue-600);"></span>Cultura e Dados</span>
-      <span><span class="legend-dot" style="background:var(--blue-400);"></span>Bastidores</span>
-      <span><span class="legend-dot" style="background:var(--blue-300);"></span>Agenda e Mídia</span>
+<section id="elo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">02 — O CONCEITO</span>
+      <span class="eyebrow" style="margin-left:14px">Conheça o time Elo</span>
+      <h2>Não é uma feature. É um time de agentes com nome, função e jeito próprio.</h2>
+      <p>No CONARH cada agente vira um personagem com identidade. A pessoa não vê uma funcionalidade, ela conhece um colega de equipe. O Painel é o QG, onde o time inteiro reporta para o gestor.</p>
     </div>
 
-    <span class="month-label">MAIO</span>
-    <div class="stack">
-      <div class="post t4">
-        <div><div class="post-day">SEG</div><div class="post-num">18/05</div></div>
-        <div>
-          <span class="post-tag t4">Agenda e Mídia</span>
-          <p class="post-text">Anúncio da palestra na Amcham. Tese central + convite à audiência.</p>
-        </div>
-        <span class="post-format">Texto + arte</span>
-      </div>
-      <div class="post t1">
-        <div><div class="post-day">QUI</div><div class="post-num">21/05</div></div>
-        <div>
-          <span class="post-tag t1">Tendências</span>
-          <p class="post-text">Por que a maioria das empresas vai errar a adoção de IA em RH — e o que diferencia as que vão acertar.</p>
-        </div>
-        <span class="post-format">Texto longo</span>
-      </div>
-      <div class="post t2">
-        <div><div class="post-day">SEG</div><div class="post-num">25/05</div></div>
-        <div>
-          <span class="post-tag t2">Cultura e Dados</span>
-          <p class="post-text">Pós-evento Amcham: 3 leituras de cultura e performance que Bruno levou do palco e dos bastidores.</p>
-        </div>
-        <span class="post-format">Carrossel + foto</span>
-      </div>
-      <div class="post t3">
-        <div><div class="post-day">QUI</div><div class="post-num">28/05</div></div>
-        <div>
-          <span class="post-tag t3">Bastidores</span>
-          <p class="post-text">Como Bruno conduz a 1:1 com sua liderança direta. O que aprendeu que não deve ser feito.</p>
-        </div>
-        <span class="post-format">1ª pessoa</span>
-      </div>
+    <div class="agent-grid">
+      <article class="agent agent-ret">
+        <span class="badge"><span class="d"></span>agente · em campo</span>
+        <h3>Elo Retenção</h3>
+        <div class="role">// monitora clima e sinaliza risco de saída</div>
+        <p class="persona">O sentinela do time. Lê as pesquisas de sentimento e clima, aprofunda a análise de quem dá sinais de risco e monta uma lista priorizada de turnover.</p>
+        <p class="says">Três pessoas do seu time mudaram de tom esse mês. Olha quem, e por quê, antes que vire uma carta de saída.</p>
+        <div class="feat">ENTREGA: <b>lista de risco encaminhada ao RH e gestor</b></div>
+      </article>
+
+      <article class="agent agent-ava">
+        <span class="badge"><span class="d"></span>copiloto · ao seu lado</span>
+        <h3>Elo Avaliação</h3>
+        <div class="role">// copiloto durante a avaliação de desempenho</div>
+        <p class="persona">O parceiro de escrita. Durante a avaliação, soma ao gestor avaliando a qualidade das respostas, checando coerência e deixando o feedback mais claro, em tempo real.</p>
+        <p class="says">Esse feedback ficou genérico. Que tal deixar mais específico e útil para a pessoa?</p>
+        <div class="feat">ENTREGA: <b>avaliações mais coerentes, no ato</b></div>
+      </article>
+
+      <article class="agent agent-um">
+        <span class="badge"><span class="d"></span>agente · herói da demo</span>
+        <h3>Elo 1 a 1</h3>
+        <div class="role">// transforma a transcrição da reunião em ação</div>
+        <p class="persona">O escriba do time. Recebe a transcrição de uma reunião e devolve talking points, planos de ação e próximos passos. A conversa vira gestão, sem ninguém digitar ata.</p>
+        <p class="says">Subiu a gravação? Já te devolvi os 4 pontos para acompanhar e as ações com responsável.</p>
+        <div class="feat">ENTREGA: <b>1 a 1 estruturado a partir da fala</b></div>
+      </article>
+
+      <article class="agent agent-cli">
+        <span class="badge"><span class="d"></span>agente · em escuta</span>
+        <h3>Elo Clima</h3>
+        <div class="role">// resume pesquisas e revela o que importa</div>
+        <p class="persona">O ouvido do time. Lê os dados de uma pesquisa e resume: pontos mais comentados, visão de detratores e promotores e os temas que merecem atenção primeiro.</p>
+        <p class="says">A pesquisa fechou. Em 30 segundos: o que elogiaram, o que dói e onde estão seus detratores.</p>
+        <div class="feat">ENTREGA: <b>resumo com promotores e detratores</b></div>
+      </article>
     </div>
 
-    <span class="month-label">JUNHO</span>
-    <div class="stack">
-      <div class="post t1">
-        <div><div class="post-day">SEG</div><div class="post-num">01/06</div></div>
-        <div>
-          <span class="post-tag t1">Tendências</span>
-          <p class="post-text">Por que o ciclo de performance de junho diz mais sobre o Q4 do que qualquer planejamento.</p>
-        </div>
-        <span class="post-format">Texto opinativo</span>
-      </div>
-      <div class="post t2">
-        <div><div class="post-day">QUI</div><div class="post-num">04/06</div></div>
-        <div>
-          <span class="post-tag t2">Cultura e Dados</span>
-          <p class="post-text">5 sinais mais comuns de que um ciclo de avaliação vai falhar — observados em dados da Elofy.</p>
-        </div>
-        <span class="post-format">Carrossel</span>
-      </div>
-      <div class="post t3">
-        <div><div class="post-day">SEG</div><div class="post-num">08/06</div></div>
-        <div>
-          <span class="post-tag t3">Bastidores</span>
-          <p class="post-text">O que mudou na rotina de Bruno depois de assumir como CEO. Agenda, foco, como dizer não.</p>
-        </div>
-        <span class="post-format">Vídeo curto</span>
-      </div>
-      <div class="post t1">
-        <div><div class="post-day">QUI</div><div class="post-num">11/06</div></div>
-        <div>
-          <span class="post-tag t1">Tendências</span>
-          <p class="post-text">IA está reescrevendo o papel do líder, não substituindo. O que muda quando tarefas são automatizadas.</p>
-        </div>
-        <span class="post-format">Texto longo</span>
-      </div>
-      <div class="post t4">
-        <div><div class="post-day">SEG</div><div class="post-num">15/06</div></div>
-        <div>
-          <span class="post-tag t4">Agenda e Mídia</span>
-          <p class="post-text">Bastidor de gravação do HR Executive Talks — convidado, tema e principal provocação.</p>
-        </div>
-        <span class="post-format">Foto + texto</span>
-      </div>
-      <div class="post t2">
-        <div><div class="post-day">QUI</div><div class="post-num">18/06</div></div>
-        <div>
-          <span class="post-tag t2">Cultura e Dados</span>
-          <p class="post-text">OKRs no meio do ciclo: quando recalibrar faz sentido e quando vira desculpa para baixar a régua.</p>
-        </div>
-        <span class="post-format">Carrossel</span>
-      </div>
-      <div class="post t3">
-        <div><div class="post-day">SEG</div><div class="post-num">22/06</div></div>
-        <div>
-          <span class="post-tag t3">Bastidores</span>
-          <p class="post-text">Uma decisão difícil que Bruno tomou no último trimestre na Elofy e o que aprendeu com ela.</p>
-        </div>
-        <span class="post-format">1ª pessoa</span>
-      </div>
-      <div class="post t1">
-        <div><div class="post-day">QUI</div><div class="post-num">25/06</div></div>
-        <div>
-          <span class="post-tag t1">Tendências</span>
-          <p class="post-text">Por que People Analytics ainda é mal usado — e a primeira pergunta que um CEO deveria fazer ao CHRO.</p>
-        </div>
-        <span class="post-format">Texto opinativo</span>
-      </div>
-      <div class="post t2">
-        <div><div class="post-day">SEG</div><div class="post-num">29/06</div></div>
-        <div>
-          <span class="post-tag t2">Cultura e Dados</span>
-          <p class="post-text">Balanço do mês: 3 padrões que se repetiram nas conversas com clientes da Elofy em junho.</p>
-        </div>
-        <span class="post-format">Texto opinativo</span>
+    <div class="hq">
+      <div class="hq-glyph">PAINEL<br>DE<br>GESTÃO</div>
+      <div>
+        <h3>O QG, onde o time todo reporta</h3>
+        <p>O Painel de Gestão é o quartel general do Elo: um único lugar onde o gestor vê todos os dados da equipe e onde cada agente reporta de volta o que encontrou. Retenção, Avaliação, 1 a 1 e Clima alimentam o QG, e o gestor decide com o time inteiro à vista. <b>Sem planilhas, sem achismos.</b></p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <span class="eyebrow">07 · Como mediremos</span>
-    <h2>Métricas de posicionamento</h2>
-    <div class="metric-grid">
-      <div class="metric">
-        <div class="metric-label"><i class="ti ti-heart" style="font-size: 14px;"></i>Engajamento</div>
-        <p class="metric-desc">Interação, qualidade dos comentários, seguidores qualificados.</p>
+<section id="bench" class="band-soft">
+  <svg class="elo-stroke" style="top:-80px;right:-140px;width:420px;height:315px;opacity:.12"><use href="#elo"/></svg>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">03 — O CAMPO</span>
+      <span class="eyebrow" style="margin-left:14px">Imersão competitiva</span>
+      <h2>O que a concorrência tem de IA, e onde ela deixa espaço.</h2>
+      <p>Leitura macro: <b>nenhum dos quatro construiu uma marca guarda chuva de IA.</b> Todos tratam IA como atributo (temos IA) ou feature pontual. O conceito Elo, como time nomeado, ocupa exatamente esse vácuo.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Player</th><th>O que tem de IA</th><th>Tese de campanha</th><th>Canal e ativo</th><th>Vácuo que deixa</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="who">Qulture.Rocks</td>
+            <td>Assistente que lê o relatório de desempenho e o converte em feedback.<small>Atua depois da avaliação.</small></td>
+            <td>Pioneiros em IA generativa para gestão de pessoas.</td>
+            <td>Imprensa e pesquisa própria, fundador como porta voz.</td>
+            <td class="gap">IA em tempo real. Profundidade vence quem chegou antes.</td>
+          </tr>
+          <tr>
+            <td class="who">Mereo</td>
+            <td>People Analytics preditivo: risco de saída, baixa performance, feedback personalizado.</td>
+            <td>De reativo a preditivo, dado não vira decisão sozinho.</td>
+            <td>SEO e conteúdo longo, tese forte e produto difuso.</td>
+            <td class="gap">Previsão acionável e demonstrável, não conceitual.</td>
+          </tr>
+          <tr>
+            <td class="who">Feedz <small>by TOTVS</small></td>
+            <td>IA de análise de sentimento em clima e e-NPS, por dimensão, mais pesquisa de desligamento voltada a turnover.<small>Evoluiu além do lançamento inicial de 2024.</small></td>
+            <td>Clima e engajamento com IA, respaldado pela marca mãe.</td>
+            <td>Release e o alcance da base TOTVS.</td>
+            <td class="gap">Conjunto orquestrado de agentes, contra módulos separados.</td>
+          </tr>
+          <tr>
+            <td class="who">Peex</td>
+            <td>Metas SMART e PDI por IA, cruza avaliação e comitê de calibração.</td>
+            <td>IA prática para RH e gestores, com 25 anos de mercado.</td>
+            <td>Performance e teste gratuito de 14 dias.</td>
+            <td class="gap">Operação do gestor no dia a dia: avaliação, 1 a 1, painel.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="bcards">
+      <div class="bcard">
+        <div class="top"><h4>Qulture.Rocks</h4><div class="tag">os pioneiros</div></div>
+        <div class="row"><div class="rk">Eles têm</div><div class="rv">Um assistente que resume avaliações depois que o ciclo fecha, e o peso de ter sido o primeiro do mercado em IA generativa.</div></div>
+        <div class="row"><div class="rk">A brecha</div><div class="rv">É leitura do passado. A IA entra quando a avaliação já acabou.</div></div>
+        <div class="row move"><div class="rk">Nosso movimento</div><div class="rv">Mostrar o Elo Avaliação agindo durante a avaliação, ao vivo. Não disputamos pioneirismo, disputamos o tempo real.</div></div>
       </div>
-      <div class="metric">
-        <div class="metric-label"><i class="ti ti-star" style="font-size: 14px;"></i>Posicionamento</div>
-        <p class="metric-desc">Top Voice, convites para palestras, painéis e mesas-redondas.</p>
+
+      <div class="bcard">
+        <div class="top"><h4>Mereo</h4><div class="tag">a tese da previsão</div></div>
+        <div class="row"><div class="rk">Eles têm</div><div class="rv">A melhor narrativa de previsão do mercado, reativo contra preditivo, e bom alcance em conteúdo e SEO.</div></div>
+        <div class="row"><div class="rk">A brecha</div><div class="rv">A previsão fica no discurso. Falam do que a IA pode fazer, sem mostrar a ação acontecendo.</div></div>
+        <div class="row move"><div class="rk">Nosso movimento</div><div class="rv">Usar a mesma tese, que o mercado já conhece, e provar com demo. O Elo Retenção entrega a lista de risco encaminhada ao responsável. Ação vence retórica.</div></div>
       </div>
-      <div class="metric">
-        <div class="metric-label"><i class="ti ti-news" style="font-size: 14px;"></i>Imprensa</div>
-        <p class="metric-desc">Menções, citações como fonte, recorrência de veículos.</p>
+
+      <div class="bcard">
+        <div class="top"><h4>Feedz · TOTVS</h4><div class="tag">clima e engajamento com IA</div></div>
+        <div class="row"><div class="rk">Eles têm</div><div class="rv">Análise de sentimento por dimensão no clima e no e-NPS, já com pesquisa de desligamento de olho em turnover, e a distribuição da TOTVS por trás.</div></div>
+        <div class="row"><div class="rk">A brecha</div><div class="rv">São módulos que avançam um a um. No clima e no sinal de turnover temos paridade, não vantagem. O que falta neles é a orquestração.</div></div>
+        <div class="row move"><div class="rk">Nosso movimento</div><div class="rv">Não competir feature a feature, onde a TOTVS tem escala. Competir no conjunto: Clima e Retenção conversando dentro do mesmo time de agentes, com o gestor no centro. O time integrado é o nosso fosso.</div></div>
       </div>
-      <div class="metric">
-        <div class="metric-label"><i class="ti ti-building" style="font-size: 14px;"></i>Marca</div>
-        <p class="metric-desc">Associação entre o nome de Bruno e Elofy / Zucchetti.</p>
+
+      <div class="bcard">
+        <div class="top"><h4>Peex</h4><div class="tag">IA aplicada, sem rótulo</div></div>
+        <div class="row"><div class="rk">Eles têm</div><div class="rv">IA bem prática em PDI e metas, e já colocam a palavra gestores no discurso.</div></div>
+        <div class="row"><div class="rk">A brecha</div><div class="rv">O foco deles é desenvolvimento, PDI e metas, não a operação do dia a dia do gestor. Pouca colisão direta hoje.</div></div>
+        <div class="row move"><div class="rk">Nosso movimento</div><div class="rv">Cravar o território do gestor agora, com o Elo 1 a 1 como destaque. É o agente sem equivalente claro neles, e a janela ainda está aberta.</div></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    Statement Estratégico · LinkedIn de Bruno Cortez · Maio e Junho de 2026
-  </footer>
+<section id="pos" class="pos">
+  <svg class="elo-stroke"><use href="#elo"/></svg>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">04 — A DIFERENÇA</span>
+      <span class="eyebrow" style="margin-left:14px">Posicionamento</span>
+    </div>
+    <p class="pos-statement">O mercado tem IA que <span class="b">lê relatório</span> e <span class="b">prevê risco</span>. A Elofy tem um <span class="mag">time de IA</span> que faz junto com o gestor.</p>
+    <div class="diff-row">
+      <div class="diff"><div class="n">DIF. 01</div><h4>Time nomeado, não atributo</h4><p>Elo é um ativo de marca que nenhum concorrente tem. Difícil de copiar porque pede narrativa, não código, e cresce a cada novo agente.</p></div>
+      <div class="diff"><div class="n">DIF. 02</div><h4>O gestor no centro</h4><p>Três agentes somam ao gestor de linha: Avaliação em tempo real, 1 a 1 de transcrição e o Painel QG. É o espaço mais aberto do mercado.</p></div>
+      <div class="diff"><div class="n">DIF. 03</div><h4>O Elo 1 a 1 é o fosso</h4><p>Transformar transcrição em talking points e planos de ação não tem equivalente claro nos quatro. É o herói da demo e o clímax da palestra.</p></div>
+    </div>
+  </div>
+</section>
 
-</div>
+<section id="gtm" class="band-soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">05 — O PLANO</span>
+      <span class="eyebrow" style="margin-left:14px">Go to market</span>
+      <h2>Três ondas em torno do CONARH. O conceito Elo é a estreia no palco.</h2>
+      <p>Estrutura inspirada no release Vibe da Bitrix24: um conceito guarda chuva, cada agente apresentado por benefício, e um convite consistente em cada onda. As datas usam o CONARH como Dia 0.</p>
+    </div>
+
+    <div class="wave">
+      <span class="wl">Onda 1 · Pré-aquecimento</span>
+      <h3>Criar curiosidade sem entregar o jogo</h3>
+      <div class="wd">D-21 a D-1</div>
+      <div class="chan"><div class="cn">Assessoria de imprensa</div><div class="cb">Pré-relacionamento com veículos de RH e tech para o anúncio do Dia 0. <b>Matéria âncora na Exame com entrevista do Bruno Cortez</b> <span class="tagpaid">mídia já paga</span>, alinhada para sair no lançamento. Kit com fact sheet dos agentes, capturas de tela e dados de mercado.</div></div>
+      <div class="chan"><div class="cn">Disparo para a base</div><div class="cb">D-14 teaser, tem reforço chegando. D-7 convite para o estande e a palestra, para clientes e leads que vão ao evento. D-3 inscrição para a live de lançamento pós-evento.</div></div>
+      <div class="chan"><div class="cn">Site</div><div class="cb">Página teaser do Elo no ar, com as silhuetas dos agentes e contagem regressiva. SEO para IA para RH e copiloto de RH.</div></div>
+      <div class="chan"><div class="cn">Mídia paga</div><div class="cb">Reconhecimento no LinkedIn, canal B2B principal: criativos do conceito Elo para cargos de RH, People e CHRO, e também gestores. Search defensivo nos nomes dos concorrentes. Retargeting de quem tocou a página teaser.</div></div>
+    </div>
+
+    <div class="wave">
+      <span class="wl">Onda 2 · Lançamento no CONARH</span>
+      <h3>O time Elo ganha rosto e palco</h3>
+      <div class="wd">D0 a D+2</div>
+      <div class="chan"><div class="cn">CONARH · estande</div><div class="cb">Cada agente é um <b>personagem</b> em uma estação. Demo ao vivo, com o <b>Elo 1 a 1 como momento mágico</b>: sobe a transcrição, o 1 a 1 nasce na hora. QR de captura que entra em fluxo de nutrição automático.</div></div>
+      <div class="chan"><div class="cn">Palestra do Bruno Cortez</div><div class="cb">Keynote com a tese do gestor no centro, detalhe na seção abaixo. Revelação do Elo e convite para o estande. <b>Tudo gravado</b>, vira conteúdo evergreen.</div></div>
+      <div class="chan"><div class="cn">Site</div><div class="cb">Landing definitiva do Elo no ar, alinhada à revelação: conceito, os 4 agentes e o QG, vídeo da demo e convite para conhecer.</div></div>
+      <div class="chan"><div class="cn">Imprensa</div><div class="cb"><b>Matéria na Exame publicada no Dia 0</b> <span class="tagpaid">mídia já paga</span>, com a entrevista do Bruno. Ele fica disponível na sala de imprensa do evento para as demais conversas.</div></div>
+      <div class="chan"><div class="cn">Mídia paga</div><div class="cb">Campanha contextual e geográfica levando tráfego para a landing durante os dias do evento.</div></div>
+    </div>
+
+    <div class="wave">
+      <span class="wl">Onda 3 · Amplificação</span>
+      <h3>Transformar alcance em pipeline</h3>
+      <div class="wd">D+3 a D+30</div>
+      <div class="chan"><div class="cn">Disparo para a base</div><div class="cb">D+1 lançamos no CONARH, para toda a base. D+7 webinar de aprofundamento com demo e perguntas. Clientes atuais recebem comunicação de rollout e early access dos agentes.</div></div>
+      <div class="chan"><div class="cn">Mídia paga</div><div class="cb">Modo conversão: criativos de demo, recorte da palestra e depoimentos. LinkedIn lead gen e retargeting de quem engajou nas ondas anteriores. Distribuição paga do clipe do Bruno.</div></div>
+      <div class="chan"><div class="cn">Imprensa</div><div class="cb">Desdobramento da Exame: artigo assinado pelo Bruno por volta de D+15, sobre o gestor no centro da IA no RH.</div></div>
+      <div class="chan"><div class="cn">Site</div><div class="cb">Otimização de conversão da landing com base nos dados das ondas anteriores, com casos e provas sociais.</div></div>
+    </div>
+
+    <div class="conarh">
+      <svg class="elo-stroke"><use href="#elo"/></svg>
+      <span class="eyebrow">Destaque · a ativação que é o coração do GTM</span>
+      <h3 style="margin-top:14px">No CONARH, o GTM são os agentes</h3>
+      <p>A estreia do conceito acontece no evento: a pessoa não recebe um folder de funcionalidades, ela <b>conhece um time</b>. Cada estação personifica um agente, o QG mostra como tudo se conecta. É essa experiência que vira foto, vídeo e pauta de imprensa.</p>
+      <div class="cx-grid">
+        <div class="cx"><h4>Elo Retenção <span>estação 01</span></h4><p>Tela sala de situação: pessoas em risco aparecendo em tempo real numa lista priorizada.</p></div>
+        <div class="cx"><h4>Elo Avaliação <span>estação 02</span></h4><p>A pessoa escreve um feedback e vê o copiloto sugerir mais clareza e coerência, ao vivo.</p></div>
+        <div class="cx"><h4>Elo 1 a 1 <span>★ herói</span></h4><p>Sobe-se uma transcrição real e o 1 a 1 estruturado aparece na hora. O momento uau do estande.</p></div>
+        <div class="cx"><h4>Elo Clima <span>estação 04</span></h4><p>Uma pesquisa fictícia resumida em segundos: promotores, detratores e temas quentes.</p></div>
+        <div class="cx" style="grid-column:1/-1"><h4>Painel, o QG <span>centro</span></h4><p>Mesa central onde todos os agentes reportam. A pessoa vê o time inteiro de cima e entende que não comprou uma feature, ganhou uma equipe.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bruno" class="band-white">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">06 — O PALCO</span>
+      <span class="eyebrow" style="margin-left:14px">Palestra do Bruno Cortez</span>
+      <h2>Reforço, não substituto: como a IA devolve tempo a quem cuida de gente.</h2>
+      <p>A tese coloca gestores e RH como <b>protagonistas e heróis</b> da história, nunca como o problema. A IA chega como reforço de um time que já trabalha duro, não como conserto de uma falha.</p>
+    </div>
+
+    <div class="talk">
+      <h3>Estrutura da keynote</h3>
+      <div class="tt">arco em 3 atos · o produto entra só no ato final</div>
+      <div class="arc-grid">
+        <div class="arc"><div class="step">Ato 1 · o reconhecimento</div><h5>Quem sustenta a cultura</h5><p>Gestores e RH traduzem estratégia em gente todo dia. A dor não é deles, é do volume de trabalho invisível: dado espalhado, clima que vira número parado, 1 a 1 que não vira ação.</p></div>
+        <div class="arc"><div class="step">Ato 2 · a virada</div><h5>De reativo a com tempo de sobra</h5><p>E se cada gestor tivesse reforços que cuidam do repetitivo, resumindo a pesquisa, estruturando o 1 a 1, sinalizando quem está de saída, para ele focar nas pessoas?</p></div>
+        <div class="arc"><div class="step">Ato 3 · a revelação</div><h5>Conheça o time Elo</h5><p>Os agentes entram como reforços do time humano. Demo do Elo 1 a 1 ao vivo. Convite para o estande e para conhecer a plataforma.</p></div>
+      </div>
+      <div class="guard">
+        <b>Guarda-relação:</b> a narrativa nunca diz que o gestor falha, esquece ou é o ponto cego. O enquadramento é de parceria e reforço: o gestor é o herói, o Elo é o time que entra em campo com ele. Toda menção de dor recai sobre processo e volume de trabalho, jamais sobre a competência das pessoas. Tom positivo, não impositivo, na primeira pessoa do plural, como manda a marca.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <svg class="elo-stroke"><use href="#elo"/></svg>
+  <div class="wrap">
+    <div>
+      <div class="brand">elofy<span class="dot">.</span></div>
+      <p>Conceito Elo · estratégia de lançamento CONARH · uso interno</p>
+      <p class="disc">Documento de trabalho de Product Marketing. A análise competitiva reflete a comunicação pública dos concorrentes até o início de 2026 e deve ser revalidada antes do evento. Datas relativas ao Dia 0, a abertura do CONARH.</p>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span class="pill">v2 · draft</span>
+      <span class="pill">PMM Senior</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
